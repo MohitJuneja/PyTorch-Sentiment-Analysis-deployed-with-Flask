@@ -1,4 +1,4 @@
-# Deploying a PyTorch model with Flask
+# Deploying a PyTorch model with Flask to cloud Run (Google Cloud)
 
 The model weights and word dictionary are available to download from S3:
 - [model weights](https://sent-model.s3.eu-west-2.amazonaws.com/conv-sentiment_model1.pt) 
