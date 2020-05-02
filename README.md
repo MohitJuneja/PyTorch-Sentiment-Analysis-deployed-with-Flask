@@ -1,17 +1,5 @@
 # Deploying a PyTorch model with Flask
 
-![Build and Deploy to Cloud Run](https://github.com/oliverproud/PyTorch-Sentiment-Analysis-deployed-with-Flask/workflows/Build%20and%20Deploy%20to%20Cloud%20Run/badge.svg?branch=master)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/oliverproud/pytorch-sent-analysis-flask?logo=Docker&logoColor=FFF)](https://hub.docker.com/repository/docker/oliverproud/pytorch-sent-analysis-flask)
-[![Website](https://img.shields.io/website?down_message=offline&up_message=online&url=https%3A%2F%2Fsentiment.oliverproud.com)](https://sentiment.oliverproud.com)
-
-Try the demo at [sentiment.oliverproud.com](https://sentiment.oliverproud.com)
-
-
-
-3 layer Convolutional model trained on IMDb dataset, using GloVe pretrained word embedddings.
-
-As this was my first "full stack" project I wanted to keep it relatively simple and quick by using a Convolutional model and deploying it on Heroku using Flask (I have now re-deployed the model on Google Cloud Run). ~~I will later explore using a BERT or most likely XLNET architecture from the Hugging Face team~~ ✔ [See here](https://github.com/oliverproud/bert-sequence-classification).
-
 The model weights and word dictionary are available to download from S3:
 - [model weights](https://sent-model.s3.eu-west-2.amazonaws.com/conv-sentiment_model1.pt) 
 - [word dict](https://sent-model.s3.eu-west-2.amazonaws.com/word_dict.pkl)
@@ -78,11 +66,15 @@ pip3 install -r requirements.txt
 
 ### Contact
 
-If you have any questions, feedback or problems of any kind, get in touch by messaging me on [Twitter - @oliverwproud](https://twitter.com/oliverwproud) or by submitting an issue.
+If you have any questions, feedback or problems of any kind, get in touch by messaging me on [Twitter - @mohitjunejaa](https://twitter.com/mohitjunejaa) or by submitting an issue.
 
-If you want to check out my deployed version you can head to [sentiment.oliverproud.com](https://sentiment.oliverproud.com).
+If you want to check out my deployed version you can head to [Live Demo](https://torch-sentiment-luo4sznkqa-uc.a.run.app/).
+
+
 
 ### References
+
+@ Thanks to OliverProud for the parent project. 
 
 Resources I used and found helpful: 
 
