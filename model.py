@@ -114,4 +114,5 @@ def predict_sentiment(sentence, model=model, min_len=5):
     probs = [{'name': index, 'prob': prediction.item()}
              for index in np.argsort(prediction.item())]
 
+
     return (sentence, probs)

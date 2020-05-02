@@ -26,6 +26,7 @@ def index():
         # Passes contents of query string to the prediction function contained in model.py
         x_input, prediction = predict_sentiment(request.args['text_in'])
         print(prediction[0]['prob'])
+        print(prediction)
 
         # Indexes the returned dictionary for the sentiment probability
         if((prediction[0]['prob']) > 0.5):
